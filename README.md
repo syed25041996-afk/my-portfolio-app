@@ -1,73 +1,32 @@
-# Welcome to your Lovable project
+# DevOps Homelab & Platform Engineering Journey
 
-## Project info
+This repository showcases my hands-on experience in building and managing a DevOps homelab to simulate production-grade environments for continuous learning and skill development in platform engineering and site reliability engineering (SRE).
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+I established this homelab to replicate real-world infrastructure challenges, enabling me to practice deploying, monitoring, and securing applications at scale without relying on cloud providers. The setup focuses on core DevOps principles: automation to reduce manual errors, reliability through redundancy and testing, observability for proactive issue detection, and security through layered defenses.
 
-## How can I edit this code?
+### Infrastructure Overview
+- **Virtualization Platform**: Proxmox for managing bare-metal servers and virtual machines
+- **Operating Systems**: Ubuntu Server VMs for consistent, Linux-based environments
+- **Container Orchestration**: Kubernetes clusters spanning multiple nodes (both bare-metal and virtualized)
+- **Networking**: VLANs, firewalls, and load balancing for isolated and secure communication
 
-There are several ways of editing your application.
+### Key Technologies and Practices
+- **Kubernetes Clusters**: Multi-node setups for high availability, including control plane and worker node management
+- **CI/CD Pipelines**: Automated workflows using GitHub Actions for code integration and Jenkins for complex deployment scenarios
+- **GitOps Deployments**: ArgoCD for declarative, version-controlled application deployments
+- **Containerization**: Docker for packaging applications and Docker Compose for local development stacks
+- **Infrastructure as Code**: Terraform for provisioning infrastructure and Ansible for configuration management
+- **Monitoring and Logging**: Prometheus for metrics collection, Grafana for visualization, and Loki for log aggregation
+- **Reverse Proxy and Security**: Nginx for load balancing and SSL/TLS termination
+- **Incident Response**: Regular simulation of failures, recovery testing, and performance optimization
+- **Security Measures**: Role-based access control (RBAC), secrets management with tools like HashiCorp Vault, and adherence to least privilege principles
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Featured Project: Secure Full-Stack File Storage Platform
+This project demonstrates end-to-end application lifecycle management in a homelab environment:
+- **Frontend**: Angular for a responsive user interface
+- **Backend**: Express.js for API services
+- **Database**: PostgreSQL for data persistence
+- **Authentication**: bcrypt for password hashing and access control mechanisms
+- **Deployment**: Containerized with Docker and orchestrated via Docker Compose
+- **CI/CD Integration**: Automated testing and deployment pipelines
+- **Infrastructure**: Hosted on Proxmox with dedicated VMs for application and database layers, treated as a production internal platform
